@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Elements</title>
+  </head>
+  <body>
+    <main>
+      <hi>Media Elements</hi>
+
+      <!-- adding videos -->
+      <div>
+        <video width="320" controls>
+          <source src="assets/video2.mp4" type="video/mp4" />
+          <source src="assets/video2.avi" type="video/avi" />
+          <source src="assets/video2.mov" type="video/mov" />
+          <source src="assets/video2.ogg" type="video/ogg" />
+        </video>
+      </div>
+
+      <!-- adding audio  -->
+      <div>
+        <audio controls loop>
+          <source src="assets/why-love.mp3" type="audio/mpeg" />
+          <!-- "mpeg" is the type format for all "mp3" audio format not "mp3" -->
+          <source src="assets/why-love.ogg" type="audio/ogg" />
+        </audio>
+      </div>
+
+      <!-- embedding images -->
+      <!-- popular formats of images 
+      .APNG – Animated Portable Network Graphics 
+          
+      .AVIF – AV1 Image Format 
+          
+      .GIF – Graphics Interchange Format 
+          
+      .JPEG / .JPG – Joint Photographic Expert Group assets/image format 
+          
+      .PNG – Portable Network Graphics 
+          
+      .SVG – Scalable Vector Graphics 
+          
+      .WEBP – Web Picture Format       
+      -->
+      <figure>
+        <img src="assets/image.jpg" alt="a ferrari suv parked in a desert." />
+        <figcaption>A ferrari SUV parked in the desert.</figcaption>
+      </figure>
+
+      <!-- adding iframes -->
+      <div>
+        <iframe
+          src="assets/video.mp4"
+          height="538"
+          allow="fullscreen; autoplay"
+          title="a short video showing an alarm ticking."
+          loading="lazy"
+          name="alarm-ticking"
+        ></iframe>
+      </div>
+    </main>
+  </body>
+</html>

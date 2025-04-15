@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+  </head>
+  <body>
+    <form>
+      <h1>User Account:</h1>
+
+      <!-- Username -->
+      <label for="username">Username</label>
+      <br />
+      <input type="text" name="username" placeholder="username" value="Jesus is King" required />
+      <br />
+      <input type="button" value="Submit" style="margin: 5px 0 5px 0" />
+
+      <br />
+      <!-- Telephone -->
+      <label for="phone">Phone:</label>
+      <br />
+      <input type="tel" name="phone" id="phone" placeholder="Telephone" />
+      <br />
+
+      <br />
+      <!-- Portfolio link  -->
+      <label for="portfolio-url">Portfolio link:</label>
+      <br />
+      <input
+        type="url"
+        name="portfolio-url"
+        id="p-url"
+        placeholder="www.portfoilo-url.com"
+      />
+      <br />
+
+      <br />
+
+      <!-- all the types of inputs -->
+      <input class="input" type="button" value="BUTTON" />
+
+      <!-- checkbox  -->
+      <br />
+      <input type="checkbox" name="cats" />
+      <label for="cat">i love cats</label>
+      <br />
+      <input type="checkbox" name="dog" />
+      <label for="dog">i love dogs</label>
+
+      <!-- radio  -->
+      <br />
+      <input class="input" id="white" type="radio" name="radio" />
+      <label dark="white">White</label>
+      <br />
+      <input class="input" id="dark" type="radio" name="radio" />
+      <label for="dark">dark</label>
+
+      <!-- submit  -->
+      <br />
+      <!-- Displays a submit button for submitting all values from an HTML form to a form-handler, typically a server. The form-handler is specified in the form’s "action" attribute -->
+
+      <!--
+       <form action="myserver.com" method="POST">
+        ...other inputs...
+
+        <input type="submit" value="Submit" /> 
+       </form>
+       -->
+
+      <!-- text -->
+      <br />
+      <label for="first-name">First Name:</label>
+
+      <input
+        name="first-name"
+        class="input"
+        type="text"
+        required
+        minlength="3"
+        maxlength="12"
+        placeholder="First Name"
+      />
+
+      <!-- password  -->
+      <br />
+      <label for="pwd">Password:</label>
+      <input type="password" name="pwd" required minlength="8"/>
+
+      <!-- date -->
+      <br />
+      <label for="dob">Date of birth:</label>
+      <input class="input" type="date" name="date-of-birth" />
+
+      <!-- datetime-local  -->
+      <br />
+      <label for="alarm-time">Alarm (date and time)</label>
+      <input type="datetime-local" name="alarm-time" />
+
+      <!-- email  -->
+      <br />
+      <label for="email">Enter your email:</label>
+      <input class="input" type="email" name="email" />
+
+      <!-- file -->
+      <br />
+      <label for="add-file">Select a file or folder</label>
+      <br />
+      <input class="input" type="file" name="add-file" />
+      <!-- To define the types of files permissible you can use the "accept" attribute. Also, to enable multiple files to be selected, add the "multiple" attribute.
+        -->
+
+      <!-- hidden  -->
+      <br />
+      <input type="hidden" name="" />
+
+      <!-- number  -->
+      <br />
+      <label for="number">Enter a number between min - max:</label>
+      <input type="number" name="number" min="0" max="2000" />
+
+      <!-- range  -->
+      <br />
+      <label for="set-volume">Voulme:</label>
+      <input type="range" name="set-volume" min="0" max="10" />
+
+      <!-- reset  -->
+      <br />
+      <input class="input" type="reset" />
+
+      <!-- search  -->
+      <br />
+      <label for="search">Search in Solomon's Wisdom:</label>
+      <input type="search" name="ask-solomon" />
+
+      <!-- time  -->
+      <!-- Displays a control for entering a time value in hours and minutes, with no time zone. -->
+      <br />
+      <label for="just-time">Select a time:</label>
+      <input class="input" type="time" name="just-time" />
+
+      <!-- telephone  -->
+      <br />
+      <label for="phone">Enter your phone number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" />
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
